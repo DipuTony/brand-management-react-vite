@@ -1,5 +1,5 @@
 'use client';
-import { useRouter } from 'next/navigation';
+import { useNavigate as useRouter } from 'react-router-dom';
 import React from 'react';
 import { BsArrowLeftShort } from 'react-icons/bs';
 import { GoChevronDown } from 'react-icons/go';
@@ -8,7 +8,6 @@ import { RiCalendarScheduleLine } from 'react-icons/ri';
 import { GoInbox } from 'react-icons/go';
 import { TbBrandGoogleAnalytics } from 'react-icons/tb';
 import { RiDeleteBin6Line } from 'react-icons/ri';
-import Image from 'next/image';
 
 interface Link {
 	icon: React.ComponentType; // Use this type for icon components
@@ -53,7 +52,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
 						<div className="flex items-center gap-2">
 							<div className="avatar">
 								<div className="w-[2.2rem] rounded-full">
-									<Image
+									<img
 										width={20}
 										height={20}
 										alt="text"
@@ -71,7 +70,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
 					</button>
 					<button
 						className="transition-all duration-300 py-2 px-4 rounded flex text-[#4B4652] items-center gap-2"
-						onClick={() => router.push('#')}
+						onClick={() => router('#')}
 					>
 						<BsArrowLeftShort className="text-[1.5rem]" />
 						<span>Back to menu</span>

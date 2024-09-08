@@ -1,6 +1,4 @@
-'use client';
-import React, { useState } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';
 import { BiPlus } from 'react-icons/bi';
 import { GoChevronDown } from 'react-icons/go';
 import { RxCross1 } from 'react-icons/rx';
@@ -26,7 +24,7 @@ const Topbar = () => {
 					<div className="avatar-group -space-x-4 rtl:space-x-reverse">
 						<div className="avatar border-0">
 							<div className="w-12 border">
-								<Image
+								<img
 									alt="Profile pic"
 									src={
 										'https://cdn.pixabay.com/photo/2024/05/04/01/25/white-tailed-eagle-8738135_1280.jpg'
@@ -40,7 +38,7 @@ const Topbar = () => {
 						</div>
 						<div className="avatar border-0">
 							<div className="w-12">
-								<Image
+								<img
 									alt="Profile pic"
 									src={
 										'https://cdn.pixabay.com/photo/2024/05/04/01/25/white-tailed-eagle-8738135_1280.jpg'
@@ -88,7 +86,7 @@ const Topbar = () => {
 						</div>
 						<div className="flex items-center px-5 mt-4 justify-start gap-4">
 							<div className="w-[2.2rem] relative">
-								<Image
+								<img
 									width={20}
 									height={20}
 									alt="text"
@@ -163,7 +161,7 @@ const Topbar = () => {
 										'url(https://cdn.pixabay.com/photo/2016/11/02/11/08/monk-1791113_640.jpg)',
 								}}
 							>
-								<Image
+								<img
 									width={20}
 									height={20}
 									alt="text"

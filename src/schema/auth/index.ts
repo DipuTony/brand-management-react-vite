@@ -6,6 +6,11 @@ export const signInSchema = z.object({
     password: z.string().min(6, "Password must be at least 6 characters long"),
 });
 
+export const resetPassword = z.object({
+
+    password: z.string().min(6, "Password must be at least 6 characters long"),
+    newPassword: z.string().min(6, "Password must be at least 6 characters long"),
+});
 // Schema for Sign Up
 export const signUpSchema = z.object({
     name: z.string().min(2, "Name must be at least 2 characters long"),

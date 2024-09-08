@@ -1,8 +1,6 @@
-import React from 'react';
 import { BiInfoCircle, BiSearch } from 'react-icons/bi';
 import { HiOutlineBellAlert } from 'react-icons/hi2';
 import { GoChevronDown } from 'react-icons/go';
-import Image from 'next/image';
 
 const Navbar = () => {
 	return (
@@ -39,7 +37,7 @@ const Navbar = () => {
 							className="btn btn-ghost btn-circle avatar "
 						>
 							<div className="w-7 rounded-full">
-								<Image
+								<img
 									width={20}
 									height={20}
 									alt="text"

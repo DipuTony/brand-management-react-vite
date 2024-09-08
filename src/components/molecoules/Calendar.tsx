@@ -1,4 +1,3 @@
-'use client';
 import React, { useState } from 'react';
 import { addMonths, subMonths } from 'date-fns';
 import { RiCalendarScheduleLine } from 'react-icons/ri';
